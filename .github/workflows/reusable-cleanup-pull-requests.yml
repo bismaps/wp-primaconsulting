@@ -77,11 +77,11 @@ jobs:
 
               // Since search queries will match anywhere for any activity on a pull request, the body specifically needs to be manually checked.
               const matchingPRs = result.search.nodes
-                .filter(
+                .filter(pr => {
                   const bodyLower = pr.bodyText.toLowerCase();
-                  pr => pr.bodyText.includes(tracTicketUrl) || pr.bodyText.includes(corePrefix)
-                )
-                .map(pr => pr.number);
+
+                  return bodyLower.includes(tracTicketUrl.toLowerCase()) || bodyLower.includes(corePrefix.toLowerCase());
+              }).map(pr => pr.number);
 
               prNumbers.push(...matchingPRs);
             }
