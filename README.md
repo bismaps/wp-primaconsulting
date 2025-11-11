@@ -48,7 +48,7 @@ Alternatively, if you have the [GitHub CLI](https://cli.github.com/) installed, 
 
 After this, remember to run `cd wordpress-develop`.
 
-After either of the two options above, move to the repository folder `cd wordpress-develop` and run the following commands in a terminal:
+Once you have forked and cloned the repository to your computer, run the following commands in a terminal:
 
 ```
 npm install
