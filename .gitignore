@@ -1,4 +1,10 @@
-# gitignore file for WordPress Core
+# Ignore generated and temporary files
+/src/.htaccess.bk
+/src/llms.txt
+/src/wp-content/litespeed/
+
+# Keep the database dump tracked intentionally
+# db_primaconsulting.sql# gitignore file for WordPress Core
 
 # Configuration files with possibly sensitive information
 .env
