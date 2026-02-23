@@ -3,8 +3,10 @@
 /src/llms.txt
 /src/wp-content/litespeed/
 
-# Keep the database dump tracked intentionally
-# db_primaconsulting.sql# gitignore file for WordPress Core
+# Database dump (now ignored)
+/db_primaconsulting.sql
+
+# gitignore file for WordPress Core
 
 # Configuration files with possibly sensitive information
 .env
